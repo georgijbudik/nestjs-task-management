@@ -9,6 +9,11 @@ const errors = {
     message: 'Username already exists',
     error: 'Conflict',
   },
+  unauthorized: {
+    statusCode: 401,
+    message: 'Please check your login credentials',
+    error: 'Unauthorized',
+  },
 };
 
 export default errors;
