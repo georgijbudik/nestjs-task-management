@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { UsersRepository } from './users.repository';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
-import errors from 'src/config/errors.config';
+import errors from '../config/errors.config';
 import {
   ConflictException,
   UnauthorizedException,

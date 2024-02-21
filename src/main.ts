@@ -5,7 +5,7 @@ import { HttpExceptionFilter } from './exception-filters/http-exception.filter';
 import { TransformInterceptor } from './transform.interceptor';
 
 async function bootstrap() {
-  const PORT = 3000;
+  const PORT = process.env.PORT;
   const logger = new Logger();
   const app = await NestFactory.create(AppModule);
   app.enableCors();
